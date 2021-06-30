@@ -3,7 +3,7 @@ set --local this_filename (realpath (status filename))
 # Go through each completion path and source the first file that is not this file.
 # We need this because this file overrides the provided git completion file which has everything.
 for path in $fish_complete_path
-  set --local that_filename (realpath $path/git.fish ^ /dev/null)
+  set --local that_filename (realpath $path/git.fish 2> /dev/null)
 
   # realpath provides nothing on failure which produces errors in next stanza
   if test -z "$that_filename"
