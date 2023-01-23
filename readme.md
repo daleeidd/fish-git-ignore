@@ -6,7 +6,7 @@ Adds an integration with the [gitignore.io] service in the form of a [git alias]
 
 **Warning!** The installation uses `git config --global alias.ignore` which will override an alias with the same name. It also removes the alias on uninstallation.
 
-`fisher add daleeidd/fish-git-ignore`
+`fisher install daleeidd/fish-git-ignore`
 
 ## Usage
 
